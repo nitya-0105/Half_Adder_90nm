@@ -10,3 +10,10 @@ Features
 | 0 | 1 |  1  |   0   |
 | 1 | 0 |  1  |   0   |
 | 1 | 1 |  0  |   1   |
+
+
+**Equation**
+- Sum = A^B
+- Carry = A.B
+
+

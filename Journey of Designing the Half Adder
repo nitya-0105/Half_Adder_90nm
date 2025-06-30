@@ -1,0 +1,50 @@
+# Half Adder Design
+
+## About Half Adder
+The Half Adder is a combinational circuit used to perform the addition of two single-bit binary numbers. It outputs:
+
+- **Sum**: XOR operation between inputs.
+- **Carry**: AND operation between inputs.
+
+This project takes a deep dive into designing a Half Adder with a focus on optimizing its performance and understanding CMOS design intricacies.
+
+## Designing the Half Adder
+Initially, the design was implemented using standard **AND** and **XOR gates**. While functionally correct, the initial design lacked optimization and aesthetic appeal in the layout.
+
+To address these shortcomings:
+- I chose a **customized approach** for the AND gate.
+- Semi-custom design techniques were applied to the XOR gate.
+
+This approach required delving into the foundational layers of CMOS design and an in-depth understanding of fabrication constraints.
+
+## Optimization Process
+Through a full-custom design approach, the optimization included:
+
+- Learning about the **layers** in CMOS design: oxide, metal, n-implant, p-implant, and polysilicon.
+- Understanding why **poly width** matters and how it impacts performance.
+- Adjusting the **distance between layers** to minimize parasitic effects.
+- Solving **Design Rule Check (DRC) errors**, ensuring the layout complies with manufacturing rules.
+
+These adjustments significantly reduced the area and improved the design's overall efficiency.
+
+## Challenges Faced
+Designing a customized Half Adder wasn’t without its hurdles:
+
+### Learning Curve
+- Understanding CMOS fabrication processes, such as the role of different layers and why specific design parameters are critical.
+
+### Solving DRC Errors
+- Custom designs often lead to rule violations. Fixing these errors was a challenging but rewarding experience, especially with mentor guidance.
+
+### LVS Errors
+- Layout versus Schematic (LVS) errors were frequent due to minor mismatches in the schematic and layout. Debugging these errors required patience and precision, but solving them was immensely satisfying.
+
+## Outcomes and Learnings
+- Successfully designed a **fully customized AND gate** and a **semi-customized XOR gate**.
+- Developed a deep understanding of CMOS design rules, fabrication layers, and optimization techniques.
+- Improved proficiency in handling **DRC** and **LVS** issues, ensuring a seamless design flow.
+
+## Future Goals
+- Extend this understanding to **Full Adder** and **Ripple Carry Adders**.
+- Explore further **area and power optimization techniques**.
+- Collaborate on more complex CMOS circuit designs.
